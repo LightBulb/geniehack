@@ -1,0 +1,19 @@
+{
+  "name": "geniehack",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.13.4",
+    "is-taken": "^0.1.1",
+    "saikou": "^1.1.0",
+    "unique-random-array": "^1.0.0",
+    "weixin-robot": "^0.5.10"
+  }
+}
