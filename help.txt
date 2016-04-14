@@ -1,5 +1,5 @@
-/npm/<name>:
+npm <name>:
 查询 NPM 包名是否被注册
 ---
-/saikou:
+saikou:
 随机 ACG 流行语

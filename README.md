@@ -10,6 +10,12 @@
 
 添加一个[新的命令](https://github.com/node-webot/weixin-robot)
 
+## Example
+
+我们的宗旨是像使用命令行一样使用微信:
+
+![preview](https://ooo.0o0.ooo/2016/04/14/570f51758adc4.png)
+
 ## License
 
 MIT &copy; [PixelCat](http://pixelcat.co)

@@ -2,7 +2,7 @@
 const npmName = require('is-taken')
 
 module.exports = {
-  pattern: /^\/npm\/([a-z\-\.]+)$/,
+  pattern: /^npm\s+([a-z\-\.]+)$/,
   handler(info, next) {
     npmName(info.param[1])
       .then(pkg => {

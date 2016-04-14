@@ -2,7 +2,7 @@
 const saikou = require('saikou')
 
 module.exports = {
-	pattern: /^\/saikou$/,
+	pattern: /^saikou$/,
 	handler(info, next) {
 		const chance = Math.round(Math.random(0,1))
 		if (chance === 0) {
