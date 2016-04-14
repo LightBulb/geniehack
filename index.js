@@ -1,8 +1,10 @@
 'use strict'
 const Fs = require('fs')
+const Path = require('path')
 const express = require('express')
 const webot = require('weixin-robot')
 const uniqueRandomArray = require('unique-random-array')
+const mkdirp = require('mkdirp')
 const ruleNpmName = require('./rules/npm-name')
 const ruleSaikou = require('./rules/saikou')
 const ruleUploadImage = require('./rules/upload-image')
@@ -11,12 +13,23 @@ const app = express()
 
 webot.set('hello', [
 	'你也好啊',
-	'你好哇'
+	'你好哇',
+	'你全家都好哇'
 ])
 
 webot.set('npm name', ruleNpmName)
 webot.set('saikou', ruleSaikou)
 webot.set('upload image', ruleUploadImage)
+
+webot.set('subscribe', {
+  pattern(info) {
+    return info.is('event') && info.param.event === 'subscribe'
+  },
+  handler(info) {
+		mkdirp.sync(Path.resolve(`/home/egoist/dev/geniehack-static/user-${info.uid}`))
+    return '欢迎订阅微信机器人，乱输内容就可以随机获取 Tip!'
+  }
+})
 
 webot.set('wildcard', {
 	pattern: null,
