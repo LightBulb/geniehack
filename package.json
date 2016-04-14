@@ -14,7 +14,9 @@
     "is-taken": "^0.1.1",
     "mkdirp": "^0.5.1",
     "saikou": "^1.1.0",
+    "shelljs": "^0.6.0",
     "unique-random-array": "^1.0.0",
+    "user-home": "^2.0.0",
     "weixin-robot": "^0.5.10"
   }
 }

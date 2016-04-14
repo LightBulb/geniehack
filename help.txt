@@ -3,3 +3,6 @@ npm <name>:
 ---
 saikou:
 随机 ACG 流行语
+---
+ls:
+显示你的目录内容
