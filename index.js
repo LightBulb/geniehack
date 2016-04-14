@@ -27,7 +27,7 @@ webot.set('subscribe', {
   },
   handler(info) {
 		mkdirp.sync(Path.resolve(`/home/egoist/dev/geniehack-static/user-${info.uid}`))
-    return '欢迎订阅微信机器人，乱输内容就可以随机获取 Tip!'
+    return '欢迎订阅阵列猫的微信机器人，我们不草粉。乱输内容就可以随机获取 Tip!'
   }
 })
 
