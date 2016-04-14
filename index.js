@@ -16,7 +16,7 @@ webot.set('hello', [
 
 webot.set('npm name', ruleNpmName)
 webot.set('saikou', ruleSaikou)
-webot.set('upload image', ruleUploadImage )
+webot.set('upload image', ruleUploadImage)
 
 webot.set('wildcard', {
 	pattern: null,
@@ -24,6 +24,7 @@ webot.set('wildcard', {
 		return readHelp()
 	}
 })
+
 webot.watch(app, {
 	token: process.env.WECHAT_TOKEN,
 	path: '/wechat'
